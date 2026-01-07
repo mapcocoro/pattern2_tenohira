@@ -104,7 +104,7 @@ export default function AccessSection() {
                     <tr>
                       <td className="text-natural-600 font-medium text-xs">9:00〜12:30</td>
                       {businessHours.map((item) => (
-                        <td key={`am-${item.day}`} className={item.am === '休' ? 'text-natural-300' : 'text-green-500 font-bold'}>
+                        <td key={`am-${item.day}`} className={item.am === '休' ? 'text-natural-300' : 'text-accent-400 font-bold'}>
                           {item.am}
                         </td>
                       ))}
@@ -112,7 +112,7 @@ export default function AccessSection() {
                     <tr>
                       <td className="text-natural-600 font-medium text-xs">15:30〜19:30</td>
                       {businessHours.map((item) => (
-                        <td key={`pm-${item.day}`} className={item.pm === '休' || item.pm === '−' ? 'text-natural-300' : 'text-green-500 font-bold'}>
+                        <td key={`pm-${item.day}`} className={item.pm === '休' || item.pm === '−' ? 'text-natural-300' : 'text-accent-400 font-bold'}>
                           {item.pm}
                         </td>
                       ))}

@@ -15,8 +15,10 @@ export default function Header() {
   }, []);
 
   const menuItems = [
+    { href: '#news', label: '最新情報' },
     { href: '#about', label: '当院について' },
     { href: '#treatment', label: '施術内容' },
+    { href: '#staff', label: '院長紹介' },
     { href: '#price', label: '料金' },
     { href: '#access', label: 'アクセス' },
   ];

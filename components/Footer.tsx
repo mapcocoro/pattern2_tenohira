@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-natural-800 text-white py-12">
+    <footer className="bg-dark-400 text-white py-12">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* ロゴ・説明 */}
@@ -27,11 +27,17 @@ export default function Footer() {
           <div>
             <h4 className="text-primary-400 font-medium mb-4">メニュー</h4>
             <nav className="flex flex-col gap-2 text-sm">
+              <a href="#news" className="text-natural-300 hover:text-primary-400 transition-colors">
+                最新情報
+              </a>
               <a href="#about" className="text-natural-300 hover:text-primary-400 transition-colors">
                 当院について
               </a>
               <a href="#treatment" className="text-natural-300 hover:text-primary-400 transition-colors">
                 施術内容
+              </a>
+              <a href="#staff" className="text-natural-300 hover:text-primary-400 transition-colors">
+                院長紹介
               </a>
               <a href="#price" className="text-natural-300 hover:text-primary-400 transition-colors">
                 料金
@@ -62,8 +68,8 @@ export default function Footer() {
         </div>
 
         {/* 区切り線 */}
-        <div className="border-t border-natural-700 pt-8">
-          <p className="text-center text-natural-400 text-sm">
+        <div className="border-t border-dark-300 pt-8">
+          <p className="text-center text-dark-100 text-sm">
             © {currentYear} てのひら整骨院 All rights reserved.
           </p>
         </div>

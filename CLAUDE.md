@@ -24,9 +24,10 @@ pattern2_tenohira/
 ├── components/
 │   ├── Header.tsx       # ヘッダー・ナビゲーション
 │   ├── HeroSection.tsx  # ファーストビュー
+│   ├── InstagramSection.tsx  # 最新情報（Instagram埋め込み）
 │   ├── AboutSection.tsx # てのひら整体とは
 │   ├── TreatmentSection.tsx  # 施術の流れ
-│   ├── StaffSection.tsx # スタッフ紹介
+│   ├── StaffSection.tsx # 院長紹介
 │   ├── PriceSection.tsx # 料金表
 │   ├── AccessSection.tsx # アクセス・診療時間
 │   └── Footer.tsx       # フッター
@@ -34,13 +35,37 @@ pattern2_tenohira/
 └── tailwind.config.ts   # Tailwind設定（カラーパレット等）
 ```
 
+## ページ構成
+
+1. Hero（ファーストビュー）
+2. 最新情報（Instagram埋め込み - LightWidget使用）
+3. 当院について
+4. 施術内容
+5. 院長紹介
+6. 料金表
+7. アクセス・診療時間
+
 ## デザインコンセプト
 
-- 優しい黄色系カラーパレット
+- ティール/水色系カラーパレット（#2a9d8f, #a3d5e0）
+- アクセントに黄色/オレンジ（#f9e79f, #f3b96e）
 - 丸ゴシック系フォントで柔らかい印象
 - 診療時間表を目立たせたレイアウト
 - 院長紹介セクション
 - 店舗外観写真配置
+
+## カラーパレット
+
+- primary: ティール系 (#2a9d8f, #a3d5e0)
+- accent: 黄色/オレンジ (#f9e79f, #f3b96e)
+- dark: 濃紺 (#1d3557, #0c3e4b)
+- red: アクセント用 (#d62828)
+
+## Instagram埋め込み
+
+LightWidgetを使用して最新投稿を表示:
+- 設定: Photos to show: 3, Columns: 3
+- InstagramSection.tsx内のコメントを参照
 
 ## 開発コマンド
 

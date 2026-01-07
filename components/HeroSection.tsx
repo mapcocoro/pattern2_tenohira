@@ -87,7 +87,7 @@ export default function HeroSection() {
                       {businessHours.map((item) => (
                         <td
                           key={`am-${item.day}`}
-                          className={item.am === '休' ? 'text-natural-300' : item.am === '○' ? 'text-green-500 font-bold' : 'text-natural-400'}
+                          className={item.am === '休' ? 'text-natural-300' : item.am === '○' ? 'text-accent-400 font-bold' : 'text-natural-400'}
                         >
                           {item.am}
                         </td>
@@ -100,7 +100,7 @@ export default function HeroSection() {
                       {businessHours.map((item) => (
                         <td
                           key={`pm-${item.day}`}
-                          className={item.pm === '休' || item.pm === '−' ? 'text-natural-300' : 'text-green-500 font-bold'}
+                          className={item.pm === '休' || item.pm === '−' ? 'text-natural-300' : 'text-accent-400 font-bold'}
                         >
                           {item.pm}
                         </td>

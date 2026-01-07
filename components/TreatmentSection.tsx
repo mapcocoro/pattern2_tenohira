@@ -55,9 +55,9 @@ export default function TreatmentSection() {
                 </div>
 
                 {/* Step 2 */}
-                <div className="bg-green-50 rounded-xl p-6">
+                <div className="bg-accent-50 rounded-xl p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                    <span className="w-8 h-8 bg-accent-400 text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
                     <h4 className="text-lg font-bold text-natural-800">治療</h4>
                   </div>
                   <p className="text-natural-600 text-sm leading-relaxed">
@@ -72,7 +72,7 @@ export default function TreatmentSection() {
         {/* 交通事故治療 */}
         <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white rounded-2xl shadow-soft overflow-hidden">
-            <div className="bg-green-500 text-white py-4 px-6">
+            <div className="bg-accent-400 text-white py-4 px-6">
               <h3 className="text-xl font-bold flex items-center gap-2">
                 <span>🚗</span>
                 交通事故治療について
@@ -91,7 +91,7 @@ export default function TreatmentSection() {
                     <strong>ムチウチで首をさわって治療することができない患者様でも</strong>、首の痛みを楽にする独自の治療法がありますので、ご安心ください。
                   </p>
                 </div>
-                <p className="text-green-600 font-medium">
+                <p className="text-accent-500 font-medium">
                   保険会社とのやりとりも行いますので、お気軽にお問合せください。
                 </p>
               </div>
