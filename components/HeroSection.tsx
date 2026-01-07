@@ -121,7 +121,7 @@ export default function HeroSection() {
               {/* メイン画像 */}
               <div className="rounded-2xl overflow-hidden shadow-soft bg-natural-100 aspect-[4/3] relative">
                 <Image
-                  src="/images/storefront.jpg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/storefront.jpg`}
                   alt="てのひら整骨院 外観 - 黄色い看板が目印"
                   fill
                   className="object-cover"
