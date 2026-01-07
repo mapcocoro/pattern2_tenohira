@@ -135,7 +135,7 @@ export default function AccessSection() {
               </h3>
               <div className="rounded-xl overflow-hidden h-80 lg:h-[calc(100%-60px)]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5!2d135.588!3d34.668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQwJzA4LjAiTiAxMzXCsDM1JzIwLjAiRQ!5e0!3m2!1sja!2sjp!4v1704567890123"
+                  src="https://www.google.com/maps?q=てのひら整骨院+大阪府東大阪市若江東町4-2-8&output=embed&z=16"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
