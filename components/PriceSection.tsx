@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from 'react';
 
 const prices = [
-  { name: '初診料', price: '1,500円', note: '※初回のみ' },
-  { name: '保険施術', price: '500円〜', note: '※症状により異なります' },
-  { name: '自費施術（全身調整）', price: '4,000円', note: '約30分' },
-  { name: '交通事故治療', price: '0円', note: '※自賠責保険適用時' },
+  { name: '保険施術', price: '要問合せ', note: '※保険割合・施術部位により異なります', category: '保険' },
+  { name: '肩こりスッキリコース', price: '3,300円', note: '30分｜肩甲骨をほぐし頭の位置を整えます', category: '自費' },
+  { name: 'てのひら式背骨矯正', price: '要問合せ', note: '骨盤・背骨・股関節・足首を調整', category: '自費' },
+  { name: '超音波コンビネーション', price: '550円', note: '五十肩・捻挫など深部の筋肉をゆるめます', category: 'オプション' },
 ];
 
 export default function PriceSection() {
@@ -68,8 +68,8 @@ export default function PriceSection() {
           {/* 注意書き */}
           <div className="mt-8 text-center text-natural-500 text-sm space-y-1">
             <p>※料金は税込表示です</p>
-            <p>※症状や施術内容により料金が変わる場合があります</p>
-            <p className="text-primary-600 font-medium">※各種保険取扱（健康保険・労災・交通事故）</p>
+            <p>※各種健康保険・労災対応</p>
+            <p>※詳しい料金はお電話でお問い合わせください</p>
           </div>
         </div>
       </div>
